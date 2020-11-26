@@ -1,4 +1,24 @@
 $(document).ready(function() {
+
+    // sidebar menu 
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        // open sidebar
+        $('.navbar').toggleClass('toggled');
+
+    });
+
+    // filter menu 
+    $("#filter").click(function(e) {
+        e.preventDefault();
+        // open filterbar
+        $('.navbar').toggleClass('filter-show');
+
+    });
+
+
+
+
     // Counter 
     $('.counter').counterUp({
         delay: 10,
@@ -94,4 +114,9 @@ $(document).ready(function() {
         });
     }
 
+    // input range
+    $(document).on('input', '#formRange', '.form-control-range', function() {
+        $('.range_value').html($(this).val() + ' ' + 'le');
+        $('#range_value').html($(this).val() + ' ' + 'le');
+    });
 });

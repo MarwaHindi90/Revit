@@ -31,17 +31,18 @@
 
     <!-- =========================================================================================== -->
     <!-- Start Navbar  -->
-    <header class="header">
-        <div class="container">
+    <header class="header fixed-top bg-white shadow">
+        <div class="container  d-none d-md-block">
+            <!-- for desktop -->
             <div class="row">
-                <div class="col-lg-5 col-md-4 col-12 align-self-center">
+                <div class="col-lg-5 col-md-3 col-6 align-self-center">
                     <a class="navbar-brand" href="/"><img src="img/logo.png" class="img-fluid"></a>
                 </div>
-                <div class="col-lg-7 col-md-8 col-12">
+                <div class="col-lg-7 col-md-9 col-6">
                     <div class="top-menu">
                         <div class="d-flex align-content-center justify-content-start">
                             <div class="ml-lg-5 ml-2">
-                                <a class="" href="login.html">
+                                <a class="" href="">
                                     <div class="user-img"><img src="img/user.png"></div>
                                     <span>تسجيل الدخول</span>
                                 </a>
@@ -62,12 +63,12 @@
 
                     <nav class="navbar navbar-expand-md">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                            </button>
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item  active">
+                                <li class="nav-item  active ">
                                     <a class="nav-link" href="index.html">الرئيسية </a>
                                 </li>
                                 <li class="nav-item ">
@@ -82,8 +83,9 @@
                                 <li class="nav-item ">
                                     <a class="nav-link" href="contact.html">اتصل بنا</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i><span class="item-no">0</span></a>
+
+                                <li class="nav-item noh">
+                                    <a class="nav-link no-border nohover" href=""><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
                                 </li>
                             </ul>
 
@@ -94,6 +96,75 @@
                 </div>
             </div>
         </div>
+        <!-- for mobile -->
+        <div class="container d-block d-md-none">
+
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand ml-0 mr-auto p-0" href="/"><img src="img/logo.png" class="" width="230"></a>
+                <button id="menu-toggle" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+
+                <div class="side-bar" id="side-bar">
+                    <ul class="navbar-nav ml-auto meun-list">
+                        <li class="nav-item border-bottom">
+                            <a class="nav-link" href="">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">تسجيل حساب جديد</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">إعدادات الحساب</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">عقاراتك المطلوبة</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">المفضلة</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">استفساراتك</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">عقاراتك المعلنة</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">اعلن عن عقارك</a>
+                        </li>
+                        <li class="nav-item border-bottom  ">
+                            <a class="nav-link" href="index.html">الرئيسية </a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="matgar-3qarat.html">متجر العقارات</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">الاعلانات</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item border-bottom ">
+                            <a class="nav-link" href="">تسجيل الخروج</a>
+                        </li>
+
+                        <li class="nav-item noh">
+                            <a class="nav-link no-border nohover" href=""><img src="img/icon-shopping-cart.png" alt=""><span class="item-no">0</span></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+
+
+
+        </div>
+
+
+
     </header>
     <!-- End Navbar  -->
 
@@ -101,7 +172,7 @@
     <section class="display my-md-5 my-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 my-3">
+                <div class="col-md-8 my-md-5 mt-3">
                     <div class="title d-flex">
                         <h5 class=" card-title text-uppercase mb-1 ml-3">اسم العقار داخل المتجر</h5>
                         <div class="fixed-label green">
@@ -112,22 +183,22 @@
                     <span>المحافظة - عنوان العقار كامل</span> </span>
 
 
-                    <div class="owl-carousel display-carousel mb-5" data-slider-id="1">
+                    <div class="owl-carousel display-carousel mb-md-5 mb-3" data-slider-id="1">
                         <div data-thumb=""><img src="img/pic4.png" alt=""></div>
                         <div data-thumb=""><img src="img/pic2.png" alt=""></div>
                         <div data-thumb=""><img src="img/pic3.png" alt=""></div>
                         <div data-thumb=""><img src="img/pic1.png" alt=""></div>
 
                     </div>
-                    <div class="owl-thumbs mb-3" data-slider-id="1">
+                    <div class="owl-thumbs mb-3 text-center" data-slider-id="1">
                         <button class="owl-thumb-item"><img src="img/pic4.png" alt=""></button>
                         <button class="owl-thumb-item"><img src="img/pic2.png" alt=""></button>
                         <button class="owl-thumb-item"><img src="img/pic3.png" alt=""></button>
                         <button class="owl-thumb-item"><img src="img/pic1.png" alt=""></button>
                     </div>
 
-                    <div class="info bg-light p-3 d-flex justify-content-between align-items-center">
-                        <div class="options d-flex  text-muted justify-content-between">
+                    <div class="info bg-light p-3 d-md-flex justify-content-between align-items-center">
+                        <div class="options d-flex mb-md-0 mb-2 text-muted justify-content-between">
                             <div class="one">
                                 <p><img src="img/icon-bed.png" alt="">
                                     <span>3 غرف نوم</span>
@@ -155,7 +226,7 @@
 
                     </div>
 
-                    <div class="details my-md-5 my-3">
+                    <div class="details mt-md-5 mt-3">
                         <h2 class="position-relative head-fonts text-uppercase underline mb-5">تفاصيل العقار</h2>
                         <p class="text-justify mb-5">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
                             للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
@@ -172,8 +243,8 @@
                             height="350px"></iframe>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5">
-                    <div class="box bg-light mt-5 mb-3 pt-5 px-3">
+                <div class="col-md-4 mt-md-5 d-none d-md-block" id="stickytypeheader">
+                    <div class="box bg-light mt-md-5 mt-3 mb-3 pt-5 px-3">
                         <h5>طلب استعلام عن العقار</h5>
                         <p class="mb-4">يمكنك ارسال طلب استعلام عن العقارلمزيد من المعلومات والتفاصيل الخاصة به</p>
                         <textarea id="ad-details" class="form-control mb-3" name="" rows="4" placeholder="الاستفسارات" aria-required="true"></textarea>
@@ -203,14 +274,83 @@
                         </ul>
                     </div>
                 </div>
+                <!-- For Mobile -->
+                <div class="col-md-4 mt-md-5 d-block d-md-none">
+                    <div class=" box bg-light mt-md-5 mt-3 mb-3 pt-5 px-3">
+                        <h5>طلب استعلام عن العقار</h5>
+                        <p class="mb-4">يمكنك ارسال طلب استعلام عن العقارلمزيد من المعلومات والتفاصيل الخاصة به</p>
+                        <textarea id="ad-details" class="form-control mb-3" name="" rows="4" placeholder="الاستفسارات" aria-required="true"></textarea>
+
+                        <a type="button" class="rounded d-block btn btn-primary red-btn" name="">إرسل الاستفسار </a>
+                    </div>
+                    <div class=" icons-share mb-5 text-center">
+                        <ul class="list-unstyled text-center">
+                            <li class="d-inline-block bg-light">
+                                <a href="">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block bg-light">
+                                <a href="">
+                                    <i class="fas fa-print"></i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block bg-light">
+                                <a href="">
+                                    <i class="fas fa-share-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" requset" id="stickybottom">
+                        <a type="button" class="rounded d-block btn btn-primary dark-btn" name=""> طلب العقار </a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="div-30 d-md-none d-block"></div>
     </section>
 
     <!-- =========================================================================================== -->
 
     <!-- Start Footer  -->
-    <footer class="footer mt-4">
+    <!-- Phone footer  -->
+    <div class="footer mobile bg-white fixed-bottom mt-5 d-block d-md-none">
+        <div class="container">
+            <div class="row justify-content-between align-items-center text-center">
+                <div class="col-3 p-0">
+                    <div class="link-footer">
+                        <a href="index.html" class="active d-inline-block">
+                           الرئيسية
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0">
+                    <div class="link-footer">
+                        <a href="#">
+                            أضف عقارك
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0">
+                    <div class="link-footer">
+                        <a href="#">
+                           العقارات
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0">
+                    <div class="link-footer">
+                        <a href="#">
+                            حسابي
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Desktop footer  -->
+    <footer class="footer mt-4 d-none d-md-block">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 col-12">
@@ -304,6 +444,32 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $(function() {
+            var stickyHeaderTop = $('#stickytypeheader').offset().top;
+
+            $(window).scroll(function() {
+                var currentScroll = $(window).scrollTop(); // get current position
+                if (currentScroll >= stickyHeaderTop) {
+                    $('#stickytypeheader').css({
+                        position: 'fixed',
+                        top: '40px',
+                        left: '35px',
+
+                    });
+                    $('#sticky').css('display', 'block');
+                } else {
+                    $('#stickytypeheader').css({
+                        position: 'static',
+                        top: '0px',
+                        left: '0'
+                    });
+                    $('#sticky').css('display', 'none');
+                }
+            });
+        });
+    </script>
 
 
 </body>

@@ -210,10 +210,10 @@
 
                     <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <li class="nav-item " role="presentation">
-                            <a class="nav-link active" id="acount-tab" href="acountsetting.html" role="tab" aria-controls="acount" aria-selected="true">إعدادات الحساب</a>
+                            <a class="nav-link " id="acount-tab" href="acountsetting.html" role="tab" aria-controls="acount" aria-selected="true">إعدادات الحساب</a>
                         </li>
                         <li class="nav-item " role="presentation">
-                            <a class="nav-link" id="yourAqar-tab" href="yourrequired3qar.html" role="tab" aria-controls="yourAqar" aria-selected="false">عقاراتك المطلوبة</a>
+                            <a class="nav-link " id="yourAqar-tab" href="yourrequired3qar.html" role="tab" aria-controls="yourAqar" aria-selected="false">عقاراتك المطلوبة</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="messages-tab" href="YourInquiries.html" role="tab" aria-controls="messages" aria-selected="false">إستفساراتك</a>
@@ -222,7 +222,7 @@
                             <a class="nav-link" id="favorite-tab" href="favorite.html" role="tab" aria-controls="favorite" aria-selected="false">المفضلة</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="aqarat-tab" href="advertisedproperties.html" role="tab" aria-controls="aqarat" aria-selected="false">عقاراتك المعلنة</a>
+                            <a class="nav-link active" id="aqarat-tab" href="advertisedproperties.html" role="tab" aria-controls="aqarat" aria-selected="false">عقاراتك المعلنة</a>
                         </li>
                         <li class="nav-item no-border" role="presentation">
                             <a class="nav-link " id="settings-tab" href="logout.html" role="tab" aria-controls="settings" aria-selected="false">تسجيل الخروج</a>
@@ -231,64 +231,196 @@
 
                 </div>
 
-                <div class="col-md-9 col-sm-7 clearfix">
-                    <!-- Acount-page setting  -->
-                    <div class="tab-pane active" id="acount" role="tabpanel" aria-labelledby="acount-tab">
+                <div class="col-md-9 col-12 clearfix">
+                    <!-- Your advertised properties -->
+                    <div class="tab-pane" id="aqarat" role="tabpanel" aria-labelledby="aqarat-tab">
+                        <div class="services">
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <a href="">
+                                        <div class="card shadow d-flex flex-row justify-content-start">
 
-                        <div class="container frm">
-                            <form id="" action="" method="" role="">
+                                            <div class="card-img position-relative">
+                                                <a href="">
+                                                    <img src="img/pic3.png" class="card-img-top " alt="..." height="100%">
 
-                                <div class="form-group mb-4">
-                                    <label class="control-label" for="username">الاسم بالكامل</label>
-                                    <input type="text" id="username" class="form-control" name="" aria-required="true" placeholder="الاسم بالكامل">
+                                                    <div class="fixed-label red">
+                                                        فعال
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="icons">
+                                                            <i class="far fa-heart"></i>
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <h5 class=" card-title text-uppercase mb-1">اسم العقار داخل المتجر</h5>
+                                                <small class="text-muted mb-3 d-inline-block"><img class="ml-2" src="img/icon-placeholder.png" alt="">
+                                         <span>المحافظة - عنوان العقار كامل</span> </small>
+                                                <div class="options d-flex  text-muted justify-content-between">
+                                                    <div class="one">
+                                                        <p><img src="img/icon-bed.png" alt="">
+                                                            <span>3 غرف نوم</span>
+                                                        </p>
+                                                        <p><img src="img/icon-room.png" alt="">
+                                                            <span>300 متر</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="two">
+                                                        <p><img src="img/icon-bathtub.png" alt="">
+                                                            <span>3 الحمامات</span>
+                                                        </p>
+                                                        <p><img src="img/icon-building.png" alt="">
+                                                            <span class="text-right">5 أدوار</span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="calender clearfix">
+                                                    <div class="right text-muted float-right">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                        <span><bdi>18/10/2020</bdi></span>
+                                                    </div>
+                                                    <div class="left float-left">
+                                                        <strong><bdi>le</bdi> 1200000  </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info p-3">
+                                                <a type="button" class="rounded d-block btn btn-primary dark-btn" name="">تحديث البيانات</a>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
+                                <div class="col-12 mb-4">
+                                    <a href="">
+                                        <div class="card shadow d-flex flex-row justify-content-start">
 
-                                <div class="form-group mb-4 ">
-                                    <label class="control-label" for="mobile">رقم الهاتف</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="رقم الهاتف">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-light border dropdown-toggle form-control text-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" dir="ltr"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
-                                                <a class="dropdown-item" href="#"><img src="img/eg.png" alt="" class="mr-2" width="30"> +2 </a>
-                                                <a class="dropdown-item" href="#"> <img src="img/eg.png" alt="" class="mr-2" width="30"> +2</a>
+                                            <div class="card-img position-relative">
+                                                <a href="">
+                                                    <img src="img/pic3.png" class="card-img-top " alt="..." height="100%">
+
+                                                    <div class="fixed-label yellow">
+                                                        يوجد عرض
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="icons">
+                                                            <i class="far fa-heart"></i>
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <h5 class=" card-title text-uppercase mb-1">اسم العقار داخل المتجر</h5>
+                                                <small class="text-muted mb-3 d-inline-block"><img class="ml-2" src="img/icon-placeholder.png" alt="">
+                                         <span>المحافظة - عنوان العقار كامل</span> </small>
+                                                <div class="options d-flex  text-muted justify-content-between">
+                                                    <div class="one">
+                                                        <p><img src="img/icon-bed.png" alt="">
+                                                            <span>3 غرف نوم</span>
+                                                        </p>
+                                                        <p><img src="img/icon-room.png" alt="">
+                                                            <span>300 متر</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="two">
+                                                        <p><img src="img/icon-bathtub.png" alt="">
+                                                            <span>3 الحمامات</span>
+                                                        </p>
+                                                        <p><img src="img/icon-building.png" alt="">
+                                                            <span class="text-right">5 أدوار</span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="calender clearfix">
+                                                    <div class="right text-muted float-right">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                        <span><bdi>18/10/2020</bdi></span>
+                                                    </div>
+                                                    <div class="left float-left">
+                                                        <strong><bdi>le</bdi> 1200000  </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info p-3">
+                                                <a type="button" class="rounded d-block btn btn-primary dark-btn mb-3" name="">تحديث البيانات</a>
+                                                <a type="button" class="rounded d-block btn btn-primary red-btn" name="">التواصل مع الادارة</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <a href="">
+                                        <div class="card shadow d-flex flex-row justify-content-start">
+
+                                            <div class="card-img position-relative">
+                                                <a href="">
+                                                    <img src="img/pic3.png" class="card-img-top " alt="..." height="100%">
+
+                                                    <div class="fixed-label green">
+                                                        تم البيع
+                                                    </div>
+                                                    <div class="overlay">
+                                                        <div class="icons">
+                                                            <i class="far fa-heart"></i>
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-body">
+
+                                                <h5 class=" card-title text-uppercase mb-1">اسم العقار داخل المتجر</h5>
+                                                <small class="text-muted mb-3 d-inline-block"><img class="ml-2" src="img/icon-placeholder.png" alt="">
+                                         <span>المحافظة - عنوان العقار كامل</span> </small>
+                                                <div class="options d-flex  text-muted justify-content-between">
+                                                    <div class="one">
+                                                        <p><img src="img/icon-bed.png" alt="">
+                                                            <span>3 غرف نوم</span>
+                                                        </p>
+                                                        <p><img src="img/icon-room.png" alt="">
+                                                            <span>300 متر</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="two">
+                                                        <p><img src="img/icon-bathtub.png" alt="">
+                                                            <span>3 الحمامات</span>
+                                                        </p>
+                                                        <p><img src="img/icon-building.png" alt="">
+                                                            <span class="text-right">5 أدوار</span>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="calender clearfix">
+                                                    <div class="right text-muted float-right">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                        <span><bdi>18/10/2020</bdi></span>
+                                                    </div>
+                                                    <div class="left float-left">
+                                                        <strong><bdi>le</bdi> 1200000  </strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="info p-3">
+                                                <a type="button" class="rounded d-block btn btn-primary dark-btn mb-3 disabled" name="">تحديث البيانات</a>
 
                                             </div>
                                         </div>
-
-                                    </div>
+                                    </a>
                                 </div>
-
-                                <div class="form-group mb-4">
-                                    <label class="control-label" for="email">البريد الالكتروني</label>
-                                    <input type="text" id="email" class="form-control" name="" aria-required="true" placeholder="البريد الالكتروني">
-                                </div>
-
-                                <div class="form-group mb-4">
-                                    <label class="control-label" for="password">كلمة المرور</label>
-                                    <input type="password" id="password" class="form-control" name="" aria-required="true" placeholder="كلمة المرور">
-                                </div>
-
-                                <div class="form-group mb-4">
-                                    <label class="control-label" for="password-repeat">تأكيد كلمة المرور</label>
-                                    <input type="password" id="password-repeat" class=" form-control login_form" name="" aria-required="true" placeholder="تأكيد كلمة المرور">
-                                </div>
-
-                                <div class="form-group mb-4">
-                                    <label class="control-label" for="ad-details">العنوان</label>
-                                    <textarea id="ad-details" class="form-control" name="" rows="6" placeholder="العنوان بالكامل" aria-required="true"></textarea>
-                                </div>
-
-                                <div class="col-md-6 offset-md-3 col-12 mt-4 text-center mx-auto">
-                                    <a type="submit" class="d-block btn btn-primary dark-btn" name="">حفظ البيانات</a>
-                                </div>
-
-                            </form>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
